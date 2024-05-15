@@ -11,25 +11,31 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/button_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mmu_logo"
-            app:layout_constraintBottom_toTopOf="@id/textview_second"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textview_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/multimedia_university_is_founded_in_1996_and_located_at_cyberjaya_selangor_malaysia_founded_initially_as_the_institute_of_tele_communication_and_information_technology_by_telekom_now_it_is_known_for_its_strong_academic_and_research_reputation_to_study_in_malaysia_in_just_25_years_of_foundation_mmu_has_been_listed_in_the_top_400_young_universities_in_the_world_by_times_higher_education_currently_it_has_about_1000_international_students_from_more_than_70_countries_worldwide_it_has_2_campuses_in_cyberjaya_and_melaka"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_second" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mmu_logo" />
+
+            <TextView
+                android:id="@+id/textview_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/multimedia_university_is_founded_in_1996_and_located_at_cyberjaya_selangor_malaysia_founded_initially_as_the_institute_of_tele_communication_and_information_technology_by_telekom_now_it_is_known_for_its_strong_academic_and_research_reputation_to_study_in_malaysia_in_just_25_years_of_foundation_mmu_has_been_listed_in_the_top_400_young_universities_in_the_world_by_times_higher_education_currently_it_has_about_1000_international_students_from_more_than_70_countries_worldwide_it_has_2_campuses_in_cyberjaya_and_melaka" />
+
+            <Button
+                android:id="@+id/button_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mmu_logo" />
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
